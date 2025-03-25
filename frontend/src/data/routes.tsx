@@ -8,7 +8,7 @@ import {
     UserAddOutlined,
     DatabaseOutlined,
 } from '@ant-design/icons';
-import ViewUser from "../pages/viewUser";
+import ViewUser from "../pages/ViewUser";
 import CreateUser from "../pages/CreateUser";
 
 export const PageRoutes = [
