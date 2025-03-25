@@ -5,7 +5,11 @@ import {
     HomeOutlined,
     UserOutlined,
     MessageOutlined,
+    UserAddOutlined,
+    DatabaseOutlined,
 } from '@ant-design/icons';
+import ViewUser from "../pages/viewUser";
+import CreateUser from "../pages/CreateUser";
 
 export const PageRoutes = [
     {
@@ -40,5 +44,27 @@ export const PageRoutes = [
         subMenuKey: '',
         childMenu: [],
         description: 'Chat'
+    },
+    {
+        id: 4,
+        path: "/user",
+        element: <ViewUser />,
+        key: 'user',
+        name: 'user',
+        icon: <DatabaseOutlined />,
+        subMenuKey: '',
+        childMenu: [],
+        description: 'User'
+    },
+    {
+        id: 5,
+        path: "/user/create",
+        element: <CreateUser />,
+        key: 'create',
+        name: 'create',
+        icon: <UserAddOutlined />,
+        subMenuKey: '',
+        childMenu: [],
+        description: 'Create User'
     }
 ];
